@@ -6,14 +6,88 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style/site.css"/>
-  <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
-  <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-  <div class="jumbotron">
-    Isabella Hilty
+  <!-- introduction -->
+<div class="jumbotron" style="background-color:black; padding-top:150px;padding-bottom:100px;margin-bottom:20px;">
+  <center><h1 style="color:white;">Isabella Hilty</h1>
+  <p style="color:white;">Hi there! I'm a recent computer science graduate who enjoys dabbling in web design.
+     <br>This site is a collection of some of the projects I've gotten to be a part of during my undergraduate studies.</p>
+  </center>
+  <br>
+</div>
+
+  <!-- The scrollable area -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+    PROJECTS:
+    <ul class="navbar-nav">
+      <li style="padding-left:15px;"><a href="#pxpuc">PxPUC</a></li>
+      <li><a href="#accord">Accord</a></li>
+      <li><a href="#gifs">Gif Art Site</a></li>
+      <li><a href="#vote">Mobile Voting App</a></li>
+      <li><a href="#liminal">Liminal</a></li>
+  </nav>
+
+  <center>
+  <div style="margin-left:50px;margin-right:50px;">
+    <!-- PxPUC -->
+    <div id="pxpuc">
+      <h2>2020</h2>
+      <div style="margin-left:50px;margin-right:50px;">
+      <h1>PxPUC: Project x Police Union Contracts</h1>
+      <a href="https://www.grieftoaction.org/PxPUC/" target="_blank">https://www.grieftoaction.org/PxPUC/</a>
+      <p></p>
+      <p>A project that two undergrads and I were assigned to work on for the Pittsburgh volunteer group Grief to Action as a part of our capstone fulfillment.</p>
+      <p>G2A works to help marginalized communities through data science. For PxPUC we compiled a database of police union contracts that can be searched all at once, or viewed/downloaded individually.
+        We also worked on a tool for helping users to identify problematic language within said contracts, as well as a tool that walks users through a generalized process of
+        how a police misconduct investigation works. The project aims to bring awareness to information that should be readily available to everyone but currently is not.
+      </p>
+        <p>I helped to create the tools,
+        <a href="" target="_blank">drew mockups</a>, and implemented the majority of the design aspects for the site.</p>
+      <br>
+      </div>
+    </div>
+
+    <!-- ACCORD -->
+    <div id="accord">
+      <h1>Accord</h1>
+      <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+      <br>
+    </div>
+    <!-- GIF ART -->
+    <div id="gifs">
+      <h1>Gif Art Display Site</h1>
+      <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+      <br>
+    </div>
+    <h2>2019</h2>
+    <!-- VOTING APP-->
+    <div id="vote">
+      <h1>Mobile Voting App</h1>
+      <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+      <br>
+    </div>
+    <h2>2018</h2>
+    <!-- LIMINAL -->
+    <div id="liminal">
+      <h1>Liminal</h1>
+      <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+      <br>
+    </div>
   </div>
+  </center>
+
 </body>
 
 </html>
