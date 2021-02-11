@@ -1,20 +1,41 @@
 
 
 h2 {
-   width: 100%;
-   text-align: center;
-   border-bottom: 1px solid #000;
-   line-height: 0.1em;
-   margin: 10px 0 20px;
+    color: #87b3ff;
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
 }
-
-h2 span {
-    background:#fff;
-    padding:0 10px;
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: #87b3ff;
+}
+h2:before {
+    margin-left: -50%;
+    text-align: right;
 }
 article {
   transition: all 300ms;
 }
 article:hover {
   transform: scale(1.08);
+}
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+li {
+  width:auto;
+  display:inline;
+  padding-right:20px;
 }
