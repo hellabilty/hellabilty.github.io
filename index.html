@@ -5,9 +5,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style/site.css"/>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style/site.css"/>
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Popper JS -->
@@ -16,103 +16,105 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
+
   <!-- introduction -->
-<div class="jumbotron" style="background-color:black; padding-top:150px;padding-bottom:100px;margin-bottom:20px;">
-  <center><h1 style="color:white;">Isabella Hilty</h1>
-  <p style="color:white;">Hi there! I'm a recent computer science graduate who enjoys dabbling in web design.
-     <br>This site is a collection of some of the assignments I've done and projects I've gotten to be a part of during my undergraduate studies.</p>
+<div class="jumbotron rounded-0" style="max-width:none; background-color:black; padding-top:130px;padding-bottom:100px;margin-bottom:20px;">
+  <center>
+    <img src="images/profile.jpg" style="width:125px; border-radius:60px;">
+    <h1 class="display-4" style="color:white;">Isabella Hilty</h1>
+    <p class="lead" style="color:white; text-align:center; max-width:1000">Hi there! I'm a recent computer science graduate who enjoys dabbling in web design.
+      <br>This site is a collection of some of the assignments I've done and projects I've gotten to be a part of during my undergraduate studies.</p>
   </center>
-  <br>
+  <br id="top">
 </div>
 
-  <!-- scrollable area -->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-  <!-- navbar area -->
-  <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
-    PROJECTS:
-    <ul class="navbar-nav">
-      <li style="padding-left:15px;"><a href="#pxpuc">PxPUC</a></li>
-      <li><a href="#accord">Accord</a></li>
-      <li><a href="#gifs">Gif Art Site</a></li>
-      <li><a href="#vote">Mobile Voting App</a></li>
-      <li><a href="#liminal">Liminal</a></li>
-  </nav>
-
-  <center>
-  <div style="margin-left:50px;margin-right:50px;">
-    
-    <!-- PxPUC -->
-    <div id="pxpuc">
-      <h2>2020</h2>
-      <div style="width:800px;">
-      <h1>PxPUC: Project x Police Union Contracts</h1>
-      <a href="https://www.grieftoaction.org/PxPUC/" target="_blank">https://www.grieftoaction.org/PxPUC/</a>
-      <p></p>
-      <p>A project that two undergrads and I were assigned to work on for the Pittsburgh volunteer group Grief to Action as a part of our capstone fulfillment.</p>
-      <p>G2A works to help marginalized communities through data science. For PxPUC we compiled a database of police union contracts that can be searched all at once, or viewed/downloaded individually.
-        We also worked on a tool for helping users to identify problematic language within said contracts, as well as a tool that walks users through a generalized process of
-        how police misconduct investigations work. The project aims to bring awareness to information that should be readily available to everyone but currently is not.
-      </p>
-        <p>I helped to create the tools,
-        <a href="g2amockups.html" target="_blank">drew mockups</a>, and implemented the majority of the design aspects for the site.</p>
-        <em><p style="color:grey;">Python, Django, HTML/CSS/Javascript, Bootstrap, mockups created with Sketch</p></em>
-      <br>
-      </div>
-    </div>
-
-    <!-- ACCORD -->
-    <div id="accord">
-      <div style="width:800px;">
-      <h1>Accord</h1>
-      <p>Part of a design project I did for CS1637: Introduction to Human-Computer Interaction, where we were tasked with coming up with an idea for an application that could
-        help solve some problem caused by COVID-19 and creating a mockup for it.</p>
-        <p>The idea I came up with was Accord, a play on a popular community app called Discord, with the goal for people to make new social connections while maintaining social distancing. The idea is that it would have similar functionality to discord (instant messaging, voice chatting), but
-          with a focus on local communities and the added ability to find and join groups/servers within the app itself.</p>
-        <em><p style="color:grey;">Mockup created with Figma</p></em>
-        <iframe src="images/accordmockup.pdf" width="100%" height="500px"></iframe>
-      <br><br>
-    </div>
-    </div>
-
-    <!-- GIF ART -->
-    <div id="gifs">
-      <div style="width:800px;">
-      <h1>Gif Art Display Site</h1>
-      <p>A very basic webpage for displaying a collection of gifs I created for my final project for SA1270: Digital Imaging. The website was hosted online at gather.town where we held a virtual exhibition for the class.</p>
-        <p>Hovering over an image enlarges it.</p>
-        <em><p style="color:grey;">HTML/CSS, Photoshop</p></em>
-      <img src="images/sa1270.png" alt="SA1270 final" style="width:800px;">
-      <br><br>
-    </div>
-    <h2>2019</h2>
-
-    <!-- VOTING APP-->
-    <div id="vote">
-      <div style="width:800px;">
-      <h1>Mobile Voting App</h1>
-      <p>A mobile voting app for Android devices created for CS1631: Software Design Methodology. Users can create topics, vote, and receive
-        results either via the app or via text.</p>
-        <em><p style="color:grey;">Java, Android Studio</p></em>
-      <iframe width="100%" height="500px" src="https://www.youtube.com/embed/nz1TXZk24Hg"></iframe>
-      <br><br>
-    </div>
-    <h2>2018</h2>
-
-    <!-- LIMINAL -->
-    <div id="liminal">
-      <div style="width:800px;">
-      <h1>Liminal</h1>
-      <p><a href="http://liminal.appspot.com/" target="_blank">http://liminal.appspot.com/</a></p>
-      <p>A simple text-based social media site designed and implemented over the course of a semester
-        with a team of three other classmates. Create an account, make and vote on posts, and sort posts by most
-        recent or by highest score.</p>
-      <em><p style="color:grey;">Python, HTML/CSS/JavaScript, Google App Engine, Google Datastore (now Google Firestore)</p></em>
-      <br>
-    </div>
+    <!-- navigation -->
+  <div class="col-md-12 text-center" id="navn">
+    <p></p>
+    <ul class="nav nav-tabs" id="center-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><small class="text-muted">WEB PROJECTS</small></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="designprojects.html"><small class="text-muted">DESIGN PROJECTS</small></a>
+      </li>
+    </ul>
   </div>
-  </center>
 
-</body>
+  <body>
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <center>
+
+           <!-- WEB PROJECTS -->
+           <div class="col-9 col-sm-10 text-center">
+
+             <!-- PxPUC -->
+             <p></p>
+             <div>
+               <h2>2020</h2>
+               <br>
+               <h1 class="display-2">PxPUC: Project x Police Union Contracts</h1>
+               <a href="https://www.grieftoaction.org/PxPUC/" target="_blank">https://www.grieftoaction.org/PxPUC/</a>
+               <p></p>
+               <p>A project that two undergrads and I developed for the Pittsburgh volunteer group Grief to Action (G2A).</p>
+               <p>G2A works to help marginalized communities through data science. For PxPUC we compiled a database of police union contracts that can be searched all at once, or viewed/downloaded individually.
+                 We also worked on a tool for helping users to identify problematic language within said contracts, as well as a tool that walks users through a generalized process of
+                 how police misconduct investigations work. The project aims to bring awareness to information that should be readily available to everyone but currently is not.
+               </p>
+                 <p>I created the initial mockups for the site, built the bulk of the front end, and helped develop the user tools.</p>
+                 <em><p class="lead text-center" id="gifs" style="color:grey;">Sketch, Python, HTML/CSS, Javascript, Bootstrap, Django, SQLite </p></em>
+
+               <br>
+             </div>
+ <br>
+
+             <!-- GIF ART -->
+             <div>
+               <h1 class="display-2">Gif Art Display Site</h1><br>
+               <p>A basic site for displaying a grid of gifs that I created for my final project in SA1270: Digital Imaging. The website was shown as part of a virtual exhibition for the class and Studio Arts department.</p>
+                 <em><p class="lead text-center" style="color:grey;">HTML/CSS, Adobe Photoshop</p></em>
+
+               <br><img src="images/sa1270.png" alt="SA1270 final" style="width:100%; max-width:800px;border-radius:5px;">
+               <br id="vote"><br>
+             </div>
+
+             <!-- VOTING APP-->
+              <div><br>
+                <h2>2019</h2>
+                <br>
+               <h1 class="display-2">Mobile Voting App</h1><br>
+               <p>A mobile voting app for Android devices created for CS1631: Software Design Methodology. Users create topics, vote, and receive
+                 results either via the app or via text.</p>
+                 <em><p class="lead text-center" style="color:grey;">Java, Android Studio</p></em>
+                 <br>  <iframe src="https://www.youtube.com/embed/nz1TXZk24Hg" style="border-radius:5px;"></iframe>
+               <br><br><br>
+             </div>
+
+
+             <!-- LIMINAL -->
+               <div>
+                 <h2>2018</h2> <br>
+               <h1 class="display-2" id="liminal">Liminal</h1>
+               <p class="mid"><a href="http://liminal.appspot.com/" target="_blank">http://liminal.appspot.com/</a></p>
+               <p>A simple text-based social media site designed and implemented over the course of a semester
+                 with a team of three other classmates. Create an account, make and vote on posts, and sort posts by most
+                 recent or by highest score.</p>
+               <em><p class="lead text-center" style="color:grey;">Python, HTML/CSS, JavaScript, Google App Engine, Google Datastore/Firestore</p></em>
+               <br><br><br>
+             </div>
+          </div>
+
+          <small class="text-muted"> <a href="#top" style="color:grey;">BACK TO TOP</small></a>
+
+        </center>
+
+        </div>
+      </div><br><br><br>
+
+  </body>
+
 
 </html>
