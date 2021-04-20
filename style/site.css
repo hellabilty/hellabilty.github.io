@@ -21,14 +21,23 @@ h2:before, h2:after {
     position: absolute;
     top: 51%;
     overflow: visible;
-    width: 100%;
+    width: 50%;
     height: 1px;
     content: '\a0';
     background-color: #e0e0e0;
 }
+
 h2:before {
-    margin-left: -100%;
+    margin-left: -50%;
     text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  h2:before, h2:after {
+      width: 100%;
+    }
+  h2:before {
+      margin-left: -100%;
+    }
 }
 
 h6 {
@@ -67,7 +76,8 @@ iframe {
   .display-2 {
      font-size: 5vw;
   }
-  @media screen and (min-width: 1800px) {
+}
+@media screen and (min-width: 1800px) {
     .display-2 {
        font-size: 4vw;
     }
